@@ -54,7 +54,8 @@ function computerTakeTurn(){
 		document.getElementById("five").innerHTML = currentPlayer;
 		
 	//else if corners are empty take corner
-	}else if(document.getElementById("one").innerHTML == "" || document.getElementById("three").innerHTML == "" || document.getElementById("seven").innerHTML == "" || document.getElementById("nine").innerHTML == ""){
+	}else if(document.getElementById("one").innerHTML == "" || document.getElementById("three").innerHTML == "" ||
+	document.getElementById("seven").innerHTML == "" || document.getElementById("nine").innerHTML == ""){
 		do{
 			
 			rand = parseInt(Math.random()*9) + 1;  //1-9
@@ -166,6 +167,7 @@ function checkWin(){
 			return true;
 	}
 	
+	return false;
 }//checkWin
 
 //change the visability of divID
