@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+	font-family:'Comfortaa', Arial ,cursive;
+}
+#gameBoard{
+	width:100%;
+	height:80vh;
+	background-color:#80ffdb;
+	position:relative;
+}
+
+
+
+#header{
+	width:100%;
+	height:10vh;
+	background-color:#64dfdf;
+	position:relative;
+	
+}
+
+#header h2 {
+	position:absolute;
+	bottom:0px;
+	margin-bottom:2px;
+}
+
+#header #left {
+	left:30px;
+	
+}
+
+#header #right {
+	right:30px;
+	
+}
+#header #powerLeft{
+	left:200px;
+}
+
+#header #powerRight{
+	right:200px;
+}
+
+#title{
+	margin-top:5px;
+	font-size:3em;
+	text-align:center;
+}
+
+.paddle {
+	width:20px;
+	height:140px;
+	border-radius:5%;
+	background-color:#6930c3;
+}
+
+#paddle1{
+	position:absolute;
+	left:2px;
+	top:35vh;
+	
+}
+
+
+#paddleLong2{
+	position:absolute;
+	right:2px;
+	top:20vh;
+}
+
+#paddle2{
+	position:absolute;
+	right:2px;
+	top:35vh;
+}
+
+#ball{
+	position:absolute;
+	left:50vw;
+	top:50vh;
+	width:30px;
+	height:30px;
+	background-color:#252525;
+	border-radius:50%;
+	
+}
+
+/*****Control Panel*********/
+#controlpanel {
+	position:absolute;
+	top:10px;
+	right:10px;
+	z-index:1;
+}
+
+.controls{
+	display:inline-block;
+	padding:6px;
+	width:90px;
+	height:20px;
+	background-color:black;
+	color:white;
+	vertical-align:top;
+	text-align:center;
+	line-height:20px;
+	font-size:0.7em;
+	border-radius:7px;
+}
+/****End Control Panel ******/
+
+/***Light Box CSS****/
+.hidden {
+	display:none;
+}
+
+.unhidden{
+	display:block;
+}
+
+#x{
+	position:absolute;
+	top:0px;
+	right:10px;
+	height:30px;
+	width:30px;
+	z-index:2;
+}
+
+#lightbox{
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	background-color:rgb(0,0,0,0.5);
+	
+}
+#positionMessage{
+	position:absolute;
+	text-align:center;
+	top:45px;
+	left:0px;
+	width:100%;
+}
+
+#boundaryMessage{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+	height:120px;
+	background-color:rgba(255,255,255,0.9);
+	z-index:1;
+	padding:30px;
+	border:thick solid #ffe5b9;
+}
+/***end of lightbox css*/
+
+
+/******
+colours: https://colorhunt.co/palette/253094
+almost black #252525
+dark purple #6930c3
+light blue #64dfdf
+cyan green #80ffdb
+******/
